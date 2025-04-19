@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Portal - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Career Portal</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html" class="active">Login</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="userType">User Type</label>
+                    <select id="userType" required>
+                        <option value="student">Student</option>
+                        <option value="trainer">Trainer</option>
+                        <option value="employer">Employer</option>
+                        <option value="advisor">Career Advisor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Career Portal. All rights reserved.</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>
